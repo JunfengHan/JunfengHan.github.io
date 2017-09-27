@@ -3,19 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>my second blog | Han blog</title>
+  <title>git命令与相关操作 | Han blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="git" />
   
   
   
-  <meta property="og:type" content="article">
-<meta property="og:title" content="My Second Blog">
-<meta property="og:url" content="http://shushuo.com/2017/09/24/My-Second-Blog/index.html">
+  
+  <meta name="description" content="git命令git常用命令 git add .              : 提交所有修改文件到stage git add abc.js         : 把abc.js提交到stage git commit -m “注释”   ： 把stage里的内容提交到本地Respository git push               : 把本地Responsitory内容推到Remote  新建/">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git命令与相关操作">
+<meta property="og:url" content="http://shushuo.com/2017/09/27/git命令与相关操作/index.html">
 <meta property="og:site_name" content="Han blog">
-<meta property="og:updated_time" content="2017-09-24T09:59:08.541Z">
+<meta property="og:description" content="git命令git常用命令 git add .              : 提交所有修改文件到stage git add abc.js         : 把abc.js提交到stage git commit -m “注释”   ： 把stage里的内容提交到本地Respository git push               : 把本地Responsitory内容推到Remote  新建/">
+<meta property="og:image" content="http://owxzgbdyh.bkt.clouddn.com/bg2015120901.png">
+<meta property="og:updated_time" content="2017-09-27T14:52:09.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Second Blog">
+<meta name="twitter:title" content="git命令与相关操作">
+<meta name="twitter:description" content="git命令git常用命令 git add .              : 提交所有修改文件到stage git add abc.js         : 把abc.js提交到stage git commit -m “注释”   ： 把stage里的内容提交到本地Respository git push               : 把本地Responsitory内容推到Remote  新建/">
+<meta name="twitter:image" content="http://owxzgbdyh.bkt.clouddn.com/bg2015120901.png">
   
     <link rel="alternate" href="/atom.xml" title="Han blog" type="application/atom+xml">
   
@@ -112,7 +120,7 @@ var themeMenus = {};
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-My-Second-Blog" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-git命令与相关操作" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -120,7 +128,7 @@ var themeMenus = {};
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      My Second Blog
+      git命令与相关操作
     </h1>
   
 
@@ -128,8 +136,8 @@ var themeMenus = {};
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/09/24/My-Second-Blog/" class="article-date">
-	  <time datetime="2017-09-24T09:59:08.000Z" itemprop="datePublished">September 24, 2017</time>
+	Posted on <a href="/2017/09/27/git命令与相关操作/" class="article-date">
+	  <time datetime="2017-09-27T13:14:49.000Z" itemprop="datePublished">September 27, 2017</time>
 	</a>
 
       
@@ -140,12 +148,76 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p><img src="http://owxzgbdyh.bkt.clouddn.com/bg2015120901.png" alt=""></p>
+<h1 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h1><h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><ul>
+<li><strong>git add .</strong>              : 提交所有修改文件到stage</li>
+<li><strong>git add abc.js</strong>         : 把abc.js提交到stage</li>
+<li><strong>git commit -m “注释”</strong>   ： 把stage里的内容提交到本地Respository</li>
+<li><strong>git push</strong>               : 把本地Responsitory内容推到Remote</li>
+</ul>
+<h2 id="新建-配置代码库"><a href="#新建-配置代码库" class="headerlink" title="新建/配置代码库"></a>新建/配置代码库</h2><ul>
+<li><strong>git init [project-name]</strong> : 在当前目录新建一个Git代码库</li>
+<li><strong>git init</strong>                : 新建一个目录，将其初始化为Git代码库</li>
+<li><p><strong>git clone [url]</strong>         : 下载一个远程项目和它的整个代码历史</p>
+</li>
+<li><p><strong>git config [–global] user.name “[name]”</strong> ：设置提交代码时的用户信息</p>
+</li>
+<li><strong>git config [–global] user.email “[email address]”</strong> ：设置提交代码时的用户信息</li>
+</ul>
+<h2 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h2><ul>
+<li><strong>git commit -a</strong>              : 提交工作区自上次commit之后的变化，直接到仓库区</li>
+<li><strong>git commit -v</strong>              : 提交时显示所有diff信息</li>
+</ul>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><ul>
+<li><strong>git branch</strong>                 : 列出所有本地分支</li>
+<li><strong>git branch -r</strong>              : 列出所有远程分支</li>
+<li><strong>git branch -a</strong>              : 列出所有本地分支和远程分支</li>
+<li><strong>git branch [branch-name]</strong>        : 新建一个分支，但依然停留在当前分支</li>
+<li><strong>git checkout -b [branch]</strong>        : 新建一个分支，并切换到该分支</li>
+<li><strong>git checkout [branch-name]</strong>      : 切换到指定分支，并更新工作区</li>
+<li><strong>git checkout -</strong>                  : 切换到上一个分支</li>
+<li><strong>git merge [branch]</strong>              : 合并指定分支到当前分支</li>
+<li><strong>git branch -d [branch-name]</strong>     : 删除分支</li>
+<li><strong>git checkout -</strong>              : 切换到上一个分支</li>
+<li><strong>git merge [branch]</strong>              : 合并指定分支到当前分支</li>
+</ul>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><ul>
+<li><strong>git tag</strong>                    : 列出所有tag</li>
+<li><strong>git tag [tag]</strong>              : 在当前commit新建一个tag</li>
+<li><strong>git show [tag]</strong>             : 查看tag信息</li>
+<li><strong>git tag [tag]</strong>              : 在当前commit新建一个tag</li>
+</ul>
+<h2 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h2><ul>
+<li><strong>git status</strong>                    : 显示有变更的文件</li>
+<li><strong>git log</strong>                       : 显示当前分支的版本历史</li>
+<li><strong>git log –stat</strong>                : 显示commit历史，以及每次commit发生变更的文件</li>
+<li><strong>git tag [tag]</strong>                 : 在当前commit新建一个tag</li>
+</ul>
+<h2 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h2><ul>
+<li><strong>git remote -v</strong>                    : 显示所有远程仓库</li>
+<li><strong>git fetch [remote]</strong>              : 下载远程仓库的所有变动</li>
+<li><strong>git pull [remote] [branch]</strong>             : 取回远程仓库的变化，并与本地分支合并</li>
+<li><strong>git push [remote] [branch]</strong>              : 上传本地指定分支到远程仓库</li>
+<li><strong>git push [remote] –all</strong>              : 推送所有分支到远程仓库</li>
+</ul>
+<h2 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h2><ul>
+<li><strong>git checkout [file]</strong>                    : 恢复暂存区的指定文件到工作区</li>
+<li><strong>git log</strong>                       : 显示当前分支的版本历史</li>
+<li><strong>git log –stat</strong>                : 显示commit历史，以及每次commit发生变更的文件</li>
+<li><strong>git tag [tag]</strong>                 : 在当前commit新建一个tag</li>
+</ul>
+
       
     </div>
     <footer class="entry-meta entry-footer">
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/git/">git</a>
+
       
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
       
         <div id="donation_div"></div>
 
@@ -192,19 +264,10 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/2017/09/27/git命令与相关操作/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          git命令与相关操作
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/24/learn_seajs/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/09/24/My-Second-Blog/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">Blog</div>
+      <div class="article-nav-title">My Second Blog</div>
     </a>
   
 </nav>
@@ -218,7 +281,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav">None</ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git命令"><span class="nav-number">1.</span> <span class="nav-text">git命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#git常用命令"><span class="nav-number">1.1.</span> <span class="nav-text">git常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建-配置代码库"><span class="nav-number">1.2.</span> <span class="nav-text">新建/配置代码库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码提交"><span class="nav-number">1.3.</span> <span class="nav-text">代码提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支"><span class="nav-number">1.4.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签"><span class="nav-number">1.5.</span> <span class="nav-text">标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看信息"><span class="nav-number">1.6.</span> <span class="nav-text">查看信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程同步"><span class="nav-number">1.7.</span> <span class="nav-text">远程同步</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销"><span class="nav-number">1.8.</span> <span class="nav-text">撤销</span></a></li></ol></li></ol>
     
     </div>
   </aside>

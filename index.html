@@ -113,6 +113,111 @@ var themeMenus = {};
         
           <section id="main">
   
+    <article id="post-git命令与相关操作"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/09/27/git命令与相关操作/">git命令与相关操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/09/27/git命令与相关操作/" class="article-date">
+	  <time datetime="2017-09-27T13:14:49.000Z" itemprop="datePublished">September 27, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="http://owxzgbdyh.bkt.clouddn.com/bg2015120901.png" alt=""></p>
+<h1 id="git命令"><a href="#git命令" class="headerlink" title="git命令"></a>git命令</h1><h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><ul>
+<li><strong>git add .</strong>              : 提交所有修改文件到stage</li>
+<li><strong>git add abc.js</strong>         : 把abc.js提交到stage</li>
+<li><strong>git commit -m “注释”</strong>   ： 把stage里的内容提交到本地Respository</li>
+<li><strong>git push</strong>               : 把本地Responsitory内容推到Remote</li>
+</ul>
+<h2 id="新建-配置代码库"><a href="#新建-配置代码库" class="headerlink" title="新建/配置代码库"></a>新建/配置代码库</h2><ul>
+<li><strong>git init [project-name]</strong> : 在当前目录新建一个Git代码库</li>
+<li><strong>git init</strong>                : 新建一个目录，将其初始化为Git代码库</li>
+<li><p><strong>git clone [url]</strong>         : 下载一个远程项目和它的整个代码历史</p>
+</li>
+<li><p><strong>git config [–global] user.name “[name]”</strong> ：设置提交代码时的用户信息</p>
+</li>
+<li><strong>git config [–global] user.email “[email address]”</strong> ：设置提交代码时的用户信息</li>
+</ul>
+<h2 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h2><ul>
+<li><strong>git commit -a</strong>              : 提交工作区自上次commit之后的变化，直接到仓库区</li>
+<li><strong>git commit -v</strong>              : 提交时显示所有diff信息</li>
+</ul>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><ul>
+<li><strong>git branch</strong>                 : 列出所有本地分支</li>
+<li><strong>git branch -r</strong>              : 列出所有远程分支</li>
+<li><strong>git branch -a</strong>              : 列出所有本地分支和远程分支</li>
+<li><strong>git branch [branch-name]</strong>        : 新建一个分支，但依然停留在当前分支</li>
+<li><strong>git checkout -b [branch]</strong>        : 新建一个分支，并切换到该分支</li>
+<li><strong>git checkout [branch-name]</strong>      : 切换到指定分支，并更新工作区</li>
+<li><strong>git checkout -</strong>                  : 切换到上一个分支</li>
+<li><strong>git merge [branch]</strong>              : 合并指定分支到当前分支</li>
+<li><strong>git branch -d [branch-name]</strong>     : 删除分支</li>
+<li><strong>git checkout -</strong>              : 切换到上一个分支</li>
+<li><strong>git merge [branch]</strong>              : 合并指定分支到当前分支</li>
+</ul>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><ul>
+<li><strong>git tag</strong>                    : 列出所有tag</li>
+<li><strong>git tag [tag]</strong>              : 在当前commit新建一个tag</li>
+<li><strong>git show [tag]</strong>             : 查看tag信息</li>
+<li><strong>git tag [tag]</strong>              : 在当前commit新建一个tag</li>
+</ul>
+<h2 id="查看信息"><a href="#查看信息" class="headerlink" title="查看信息"></a>查看信息</h2><ul>
+<li><strong>git status</strong>                    : 显示有变更的文件</li>
+<li><strong>git log</strong>                       : 显示当前分支的版本历史</li>
+<li><strong>git log –stat</strong>                : 显示commit历史，以及每次commit发生变更的文件</li>
+<li><strong>git tag [tag]</strong>                 : 在当前commit新建一个tag</li>
+</ul>
+<h2 id="远程同步"><a href="#远程同步" class="headerlink" title="远程同步"></a>远程同步</h2><ul>
+<li><strong>git remote -v</strong>                    : 显示所有远程仓库</li>
+<li><strong>git fetch [remote]</strong>              : 下载远程仓库的所有变动</li>
+<li><strong>git pull [remote] [branch]</strong>             : 取回远程仓库的变化，并与本地分支合并</li>
+<li><strong>git push [remote] [branch]</strong>              : 上传本地指定分支到远程仓库</li>
+<li><strong>git push [remote] –all</strong>              : 推送所有分支到远程仓库</li>
+</ul>
+<h2 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h2><ul>
+<li><strong>git checkout [file]</strong>                    : 恢复暂存区的指定文件到工作区</li>
+<li><strong>git log</strong>                       : 显示当前分支的版本历史</li>
+<li><strong>git log –stat</strong>                : 显示commit历史，以及每次commit发生变更的文件</li>
+<li><strong>git tag [tag]</strong>                 : 在当前commit新建一个tag</li>
+</ul>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/git/">git</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-My-Second-Blog"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -190,6 +295,52 @@ var themeMenus = {};
   <span class="ico-tags"></span>
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/learning/">learning</a></li></ul>
 
+      
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-my-first-post"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/09/24/my-first-post/">开始写blog</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/09/24/my-first-post/" class="article-date">
+	  <time datetime="2017-09-23T18:47:07.000Z" itemprop="datePublished">September 24, 2017</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>试试吧</li>
+<li>不知道后面能不能坚持</li>
+<li>总的来说还是有坚持下去的愿望的</li>
+</ul>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
       
 
       
@@ -419,6 +570,18 @@ var themeMenus = {};
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2017/09/27/git命令与相关操作/">git命令与相关操作</a></h6>
+              <span>September 27, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2017/09/24/My-Second-Blog/">My Second Blog</a></h6>
               <span>September 24, 2017</span>
             </div>
@@ -432,6 +595,18 @@ var themeMenus = {};
             
 
               <h6 style="margin: 0;"><a href="/2017/09/24/learn_seajs/">Blog</a></h6>
+              <span>September 24, 2017</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/09/24/my-first-post/">开始写blog</a></h6>
               <span>September 24, 2017</span>
             </div>
 
@@ -470,7 +645,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Frame/">Frame</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Learning/">Learning</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Frame/">Frame</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Learning/">Learning</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -480,7 +655,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/frame/">frame</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pubjs/">pubjs</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/frame/">frame</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learning/">learning</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pubjs/">pubjs</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -490,7 +665,7 @@ var themeMenus = {};
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/frame/" style="font-size: 10px;">frame</a> <a href="/tags/learning/" style="font-size: 20px;">learning</a> <a href="/tags/pubjs/" style="font-size: 10px;">pubjs</a>
+      <a href="/tags/frame/" style="font-size: 10px;">frame</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/learning/" style="font-size: 20px;">learning</a> <a href="/tags/pubjs/" style="font-size: 10px;">pubjs</a>
     </div>
   </div>
 
@@ -500,7 +675,7 @@ var themeMenus = {};
     <h3 class="widget-title">Archiv</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">6</span></li></ul>
     </div>
   </div>
 
